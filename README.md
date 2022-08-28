@@ -1,7 +1,9 @@
 ## brainfuckyou
 
-This is a variant of `brainfuck`, suggeted by my friend, [Wesley Hartford](https://github.com/wfhartford), that adds more fuckery
-to the langauge, by requiring a semicolon after every instruction.
+This is a variant of [Brainfuck](https://en.wikipedia.org/wiki/Brainfuck), 
+suggested by my friend, [Wesley Hartford](https://github.com/wfhartford), 
+that adds more fuckery to the langauge, by requiring a semicolon after 
+every instruction.
 
 For example, "Hello World!" looks like this
 
