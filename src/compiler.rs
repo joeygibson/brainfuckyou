@@ -31,8 +31,13 @@ impl Compiler {
         while self.position < self.code_length {
             let current = self.code[self.position];
 
-            if last_char.is_some() && valid_chars.contains(current) && last_char.unwrap() != ';' {
-                return Err(format!("invalid code at position {}", self.position));
+            match last_char {
+                Some(lc) => {
+                    if valid_chars.contains(current) && lc != ';' {
+                        return Err(format!("invalid code at position {}", self.position));
+                    }
+                },
+                None => {}
             }
 
             match current {
