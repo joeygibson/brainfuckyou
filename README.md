@@ -15,9 +15,9 @@ For example, "Hello World!" looks like this
 and a simple program to add two numbers would look like this:
 
 ```
-[
-    This program adds two numbers;, 2;, and 5;, and prints the result
-    followed by a newline;.
+[;
+    This program adds two numbers,; 2,; and 5,; and prints the result
+    followed by a newline.
 ;];
 
 +;+;
@@ -35,7 +35,7 @@ and a simple program to add two numbers would look like this:
 <; .;
 
 >;
-+;+;+;+;+;+;+;+;+;+;  // newline;
++;+;+;+;+;+;+;+;+;+;  // newline
 .;
 ```
 

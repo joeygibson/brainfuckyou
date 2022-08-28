@@ -30,14 +30,12 @@ impl Compiler {
 
         while self.position < self.code_length {
             let current = self.code[self.position];
+            let semi_pos = self.position + 1;
 
-            match last_char {
-                Some(lc) => {
-                    if valid_chars.contains(current) && lc != ';' {
-                        return Err(format!("invalid code at position {}", self.position));
-                    }
-                },
-                None => {}
+            if semi_pos < self.code_length
+                && valid_chars.contains(current)
+                && self.code[semi_pos] != ';' {
+                return Err(format!("invalid code at position {}", self.position));
             }
 
             match current {
